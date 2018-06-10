@@ -12,6 +12,8 @@ def main_page(request):
         'var_title': pageTitle,
         'var_authorName': author_name.author_name,
         'var_authorBio': author_bio.author_bio,
+        'var_profilePhoto': author_bio.author_photo,
+
     }
     # this code automatically look inside the templates folder
     return render(request, 'main/main_index.html', context)

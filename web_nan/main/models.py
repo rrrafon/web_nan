@@ -10,6 +10,7 @@ class author(models.Model):
 
 class authorInfo(models.Model):
     author_name = models.ForeignKey(author, on_delete= models.CASCADE)
+    author_photo = models.CharField(max_length=1000)  # description of author
     author_bio = models.CharField(max_length=1000)  # description of author
     author_linkedIn = models.CharField(max_length=1000)  # link to linkedIn
     author_facebook = models.CharField(max_length=1000)  # link to facebook
